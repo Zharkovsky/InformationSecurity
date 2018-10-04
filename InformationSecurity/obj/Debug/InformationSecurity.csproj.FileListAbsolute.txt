@@ -1,0 +1,15 @@
+c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\bin\Debug\InformationSecurity.exe.config
+c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\bin\Debug\InformationSecurity.exe
+c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\bin\Debug\InformationSecurity.pdb
+c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity.csprojAssemblyReference.cache
+c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\MainWindow.g.cs
+c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\App.g.cs
+c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity_MarkupCompile.cache
+c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity_MarkupCompile.lref
+c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\MainWindow.baml
+c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity.g.resources
+c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity.Properties.Resources.resources
+c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity.csproj.GenerateResource.cache
+c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity.csproj.CoreCompileInputs.cache
+c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity.exe
+c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity.pdb
