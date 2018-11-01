@@ -23,34 +23,28 @@ namespace InformationSecurity
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            int strLength = Input.Text.Length;
-            string[,] matr = DefineMatrix(strLength, out int matrRow, out int matrCol);
-            row = matrRow;
-            col = matrCol;
+            if (!CheckKeys(Input.Text, out row, out col)) return;
+            string[,] matr = new string[row, col];
             rowPermutation = new int[row];
             colPermutation = new int[col];
-            if (!CheckKeys()) return;
             int index = 0;
             RowKey.Text.Split(' ').ToList().ForEach(_ => rowPermutation[index++] = Convert.ToInt32(_));
             index = 0;
             ColumnKey.Text.Split(' ').ToList().ForEach(_ => colPermutation[index++] = Convert.ToInt32(_));
-            Output.Text = Encode(Input.Text, strLength, matr);
+            Output.Text = Encode(Input.Text, matr);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            int strLength = Input.Text.Length;
-            string[,] matr = DefineMatrix(strLength, out int matrRow, out int matrCol);
-            row = matrRow;
-            col = matrCol;
+            if (!CheckKeys(Input.Text, out row, out col)) return;
+            string[,] matr = new string[row, col];
             rowPermutation = new int[row];
             colPermutation = new int[col];
-            if (!CheckKeys()) return;
             int index = 0;
             RowKey.Text.Split(' ').ToList().ForEach(_ => rowPermutation[index++] = Convert.ToInt32(_));
             index = 0;
             ColumnKey.Text.Split(' ').ToList().ForEach(_ => colPermutation[index++] = Convert.ToInt32(_));
-            Output.Text = Decode(Input.Text, Input.Text.Length, matr);
+            Output.Text = Decode(Input.Text, matr);
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
@@ -62,48 +56,49 @@ namespace InformationSecurity
             }
         }
 
-        private string[,] DefineMatrix(int strLength, out int matrRow, out int matrCol)
-        {
-            int col = (int)Math.Sqrt(strLength);
-            int row = 2;
-
-            while (col * row < strLength)
-            {
-                row++;
-            }
-
-            matrRow = row;
-            matrCol = col;
-
-            return new string[row, col];
-        }
-
-        private bool CheckKeys()
+        private bool CheckKeys(string inputString, out int row, out int col)
         {
             bool result = true;
             var set = new HashSet<int>();
             try
             {
-                RowKey.Text.Split(' ').ToList().ForEach(_ => set.Add(Convert.ToInt32(_)));
-                result = (set.Count == row);
-                set.ToList().ForEach(_ => result = result && 0 < _ && _ <= row);
+                RowKey.Text.Split(' ').ToList().ForEach(_ =>
+                {
+                    if (set.Contains(Convert.ToInt32(_))) result = false;
+                    set.Add(Convert.ToInt32(_));
+                });
+                int rows = set.Count;
+                set.ToList().ForEach(_ => result = result && 0 < _ && _ <= rows);
                 set.Clear();
-                ColumnKey.Text.Split(' ').ToList().ForEach(_ => set.Add(Convert.ToInt32(_)));
-                result = result && (set.Count == col);
-                set.ToList().ForEach(_ => result = result && 0 < _ && _ <= col);
+                ColumnKey.Text.Split(' ').ToList().ForEach(_ =>
+                {
+                    if (set.Contains(Convert.ToInt32(_))) result = false;
+                    set.Add(Convert.ToInt32(_));
+                });
+                int cols = set.Count;
+                set.ToList().ForEach(_ => result = result && 0 < _ && _ <= cols);
+
+                row = rows;
+                col = cols;
+
+                result = result && (row * cols >= inputString.Length);
             }
             catch (Exception ex)
             {
+                row = col = 0;
                 result = false;
             }
             if (!result)
+            {
                 Error.Text = "Ошибка ключа. Проверьте ключ";
+                Output.Text = "";
+            }
             else
                 Error.Text = "";
             return result;
         }
 
-        private string Encode(string str, int strLength, string[,] matr)
+        private string Encode(string str, string[,] matr)
         {
             string codeStr = "";
             int strIter = 0, r;
@@ -114,7 +109,7 @@ namespace InformationSecurity
                 r = rowPermutation[rp] - 1;
                 for (int j = 0; j < col; j++)
                 {
-                    if (strIter < strLength)
+                    if (strIter < str.Length)
                     { //если еще не всю строку переписали
                         matr[r, j] = (str[strIter]).ToString();
                         strIter++;
@@ -138,7 +133,7 @@ namespace InformationSecurity
             return codeStr;
         }
 
-        private string Decode(string str, int strLength, string[,] matr)
+        private string Decode(string str, string[,] matr)
         {
             string decodeStr = "";
             int strIter = 0, c;

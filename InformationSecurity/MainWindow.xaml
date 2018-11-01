@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InformationSecurity"
         mc:Ignorable="d"
-        Title="Лабораторная работа ИБЗИ №1" Height="450" Width="800">
+        Title="Лабораторная работа ИБЗИ №1" Height="240" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -15,17 +15,13 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <TextBlock Text="Введите текст" Grid.Column="0" Margin="10 0"/>
-            <Button Content="Выбрать файл" Grid.Column="1" Margin="10 0" Width="100" HorizontalAlignment="Left" Click="Button_Click_2"/>
-        </Grid>
-        <TextBox x:Name="Input" Grid.Row="1" Margin="10 0" Height="100"/>
-        <Grid Grid.Row="2">
+        
+        <Grid Grid.Row="2" Margin="10">
             <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
@@ -33,16 +29,20 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <TextBlock Text="Ключ по строкам" Grid.Row="0" Grid.Column="0" Margin="10 0"/>
-            <TextBox x:Name="RowKey" Grid.Row="1" Grid.Column="0" Margin="10 0"/>
-            <TextBlock Text="Ключ по столбцам" Grid.Row="0" Grid.Column="1" Margin="10 0"/>
-            <TextBox x:Name="ColumnKey" Grid.Row="1" Grid.Column="1" Margin="10 0"/>
-            <Button Content="Кодировать" Grid.Row="2" Grid.Column="0" Click="Button_Click" Margin="10"/>
-            <Button Content="Декодировать" Grid.Row="2" Grid.Column="1" Click="Button_Click_1" Margin="10"/>
+            <TextBlock Text="Введите текст" Grid.Column="0" Margin="10 5"/>
+            <TextBox x:Name="Input" Grid.Row="1" Grid.Column="0" Grid.RowSpan="4" Margin="10 0" Height="100"/>
+            <Button Content="Прочитать из файла" Grid.Row="5" Grid.Column="0" Margin="10 0" Click="Button_Click_2"/>
+            <TextBlock Text="Ключ по строкам" Grid.Row="0" Grid.Column="1" Margin="10 5"/>
+            <TextBox x:Name="RowKey" Grid.Row="1" Grid.Column="1" Margin="10 0"/>
+            <TextBlock Text="Ключ по столбцам" Grid.Row="2" Grid.Column="1" Margin="10 5 0 5"/>
+            <TextBox x:Name="ColumnKey" Grid.Row="3" Grid.Column="1" Margin="10 0"/>
+            <Button Content="Кодировать" Grid.Row="4" Grid.Column="1" Click="Button_Click" Margin="10 10 10 0"/>
+            <Button Content="Декодировать" Grid.Row="5" Grid.Column="1" Click="Button_Click_1" Margin="10 0"/>
+            <TextBlock Text="Результат" Grid.Row="0" Grid.Column="2" Margin="10 5"/>
+            <TextBox x:Name="Output" Grid.Row="1" Grid.Column="2" Grid.RowSpan="5" Height="122" Margin="10 0"/>
         </Grid>
-        <TextBlock Text="Результат" Grid.Row="3" Margin="10 0"/>
-        <TextBox x:Name="Output" Grid.Row="4" Height="100" Margin="10 0"/>
-        <TextBlock x:Name="Error" Grid.Row="5" Margin="10 0"/>
+        <TextBlock x:Name="Error" Grid.Row="5" HorizontalAlignment="Center" Margin="20 0"/>
     </Grid>
 </Window>
