@@ -3,7 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Windows;
+using WPFFolderBrowser;
 
 namespace InformationSecurity
 {
@@ -31,7 +33,30 @@ namespace InformationSecurity
             RowKey.Text.Split(' ').ToList().ForEach(_ => rowPermutation[index++] = Convert.ToInt32(_));
             index = 0;
             ColumnKey.Text.Split(' ').ToList().ForEach(_ => colPermutation[index++] = Convert.ToInt32(_));
-            Output.Text = Encode(Input.Text, matr);
+            var result = Encode(Input.Text, matr);
+            index = 1;
+            Output.Text = "";
+            if (!string.IsNullOrWhiteSpace(Directory.Text))
+            {
+                DirectoryInfo dirInfo = new DirectoryInfo(Directory.Text);
+                foreach (FileInfo file in dirInfo.GetFiles())
+                {
+                    file.Delete();
+                }
+            }
+            result.ToList().ForEach(_ =>
+            {
+                Output.Text += $"Блок {index}: {_} \n";
+                if(!string.IsNullOrWhiteSpace(Directory.Text))
+                {
+                    var array = Encoding.UTF8.GetBytes(_);
+                    using (var file = File.Create(Path.Combine(Directory.Text, index + ".txt")))
+                    {
+                        file.Write(array, 0, array.Length);
+                    }
+                }
+                index++;
+            });
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -56,6 +81,15 @@ namespace InformationSecurity
             }
         }
 
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            var fbd = new WPFFolderBrowserDialog();
+            if ((fbd.ShowDialog() ?? false) && !string.IsNullOrWhiteSpace(fbd.FileName))
+            {
+                Directory.Text = fbd.FileName;
+            }
+        }
+
         private bool CheckKeys(string inputString, out int row, out int col)
         {
             bool result = true;
@@ -64,7 +98,6 @@ namespace InformationSecurity
             {
                 RowKey.Text.Split(' ').ToList().ForEach(_ =>
                 {
-                    if (set.Contains(Convert.ToInt32(_))) result = false;
                     set.Add(Convert.ToInt32(_));
                 });
                 int rows = set.Count;
@@ -78,10 +111,10 @@ namespace InformationSecurity
                 int cols = set.Count;
                 set.ToList().ForEach(_ => result = result && 0 < _ && _ <= cols);
 
-                row = rows;
+                row = RowKey.Text.Split(' ').Length;
                 col = cols;
 
-                result = result && (row * cols >= inputString.Length);
+                result = result && (rows * cols == Convert.ToInt32(NumBlocks.Text) && row * col >= inputString.Length);
             }
             catch (Exception ex)
             {
@@ -98,63 +131,85 @@ namespace InformationSecurity
             return result;
         }
 
-        private string Encode(string str, string[,] matr)
+        private string[] Encode(string str, string[,] matr)
         {
-            string codeStr = "";
-            int strIter = 0, r;
+            var codeStr = new string[Convert.ToInt32(NumBlocks.Text)];
+            int strIter = 0, K;
 
             //write
-            for (int rp = 0; rp < row; rp++)
+            for (int r = 0; r < row; r++)
             {
-                r = rowPermutation[rp] - 1;
-                for (int j = 0; j < col; j++)
+                for (int c = 0; c < col; c++)
                 {
                     if (strIter < str.Length)
                     { //если еще не всю строку переписали
-                        matr[r, j] = (str[strIter]).ToString();
+                        matr[r, c] = (str[strIter]).ToString();
                         strIter++;
                     }
                     else
                     {
-                        matr[r, j] = " ";
+                        matr[r, c] = " ";
                     }
                 }
             }
 
             //read
-            for (int cp = 0; cp < col; cp++)
+            for (int c = 0; c < col; c++)
             {
-                for (int i = 0; i < row; i++)
+                for (int r = 0; r < row; r++)
                 {
-                    codeStr += matr[i, colPermutation[cp] - 1];
+                    K = col * (rowPermutation[r] - 1) + colPermutation[c];
+                    codeStr[K - 1] += matr[r, c];
                 }
             }
 
             return codeStr;
         }
 
+        
+
         private string Decode(string str, string[,] matr)
         {
             string decodeStr = "";
-            int strIter = 0, c;
+            var codeStr = new string[Convert.ToInt32(NumBlocks.Text)];
+            int i = 0, strIter = 0, K;
 
+            var directory = Directory.Text;
+            if (string.IsNullOrWhiteSpace(directory)) return null;
 
-            //write
-            for (int cp = 0; cp < col; cp++)
+            DirectoryInfo dirInfo = new DirectoryInfo(directory);
+            foreach (FileInfo file in dirInfo.GetFiles())
             {
-                c = colPermutation[cp] - 1;
-                for (int i = 0; i < row; i++)
+                codeStr[i++] = File.ReadAllText(file.FullName);
+            }
+            
+
+            //read
+            for (int c = 0; c < col; c++)
+            {
+                for (int r = 0; r < row; r++)
                 {
-                    matr[i, c] = (str[strIter]).ToString();
-                    strIter++;
+                    K = col * (rowPermutation[r] - 1) + colPermutation[c];
+                    matr[r, c] = codeStr[K - 1].FirstOrDefault().ToString();
+                    if(!string.IsNullOrWhiteSpace(codeStr[K-1]))
+                        codeStr[K - 1] = codeStr[K - 1].Remove(0, 1);
                 }
             }
 
-            //read
-            for (int rp = 0; rp < row; rp++)
+            //write
+            for (int r = 0; r < row; r++)
             {
-                for (int j = 0; j < col; j++)
-                    decodeStr += matr[rowPermutation[rp] - 1, j];
+                for (int c = 0; c < col; c++)
+                {
+                    if (strIter < str.Length)
+                    { //если еще не всю строку переписали
+                        decodeStr += matr[r, c];
+                    }
+                    else
+                    {
+                        matr[r, c] = " ";
+                    }
+                }
             }
 
             return decodeStr;

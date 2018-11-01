@@ -28,3 +28,5 @@ C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\obj\Debug\
 C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\obj\Debug\InformationSecurity.csproj.CoreCompileInputs.cache
 C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\obj\Debug\InformationSecurity.exe
 C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\obj\Debug\InformationSecurity.pdb
+C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\bin\Debug\WPFFolderBrowser.dll
+C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\obj\Debug\InformationSecurity.csproj.CopyComplete
