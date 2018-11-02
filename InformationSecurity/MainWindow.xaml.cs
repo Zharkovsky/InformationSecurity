@@ -69,7 +69,7 @@ namespace InformationSecurity
             RowKey.Text.Split(' ').ToList().ForEach(_ => rowPermutation[index++] = Convert.ToInt32(_));
             index = 0;
             ColumnKey.Text.Split(' ').ToList().ForEach(_ => colPermutation[index++] = Convert.ToInt32(_));
-            Output.Text = Decode(Input.Text, matr);
+            Input.Text = Decode(Input.Text, matr);
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
@@ -77,7 +77,7 @@ namespace InformationSecurity
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
             {
-                Input.Text = File.ReadAllText(openFileDialog.FileName);
+                Input.Text = Encoding.UTF8.GetString(File.ReadAllBytes(openFileDialog.FileName));
             }
         }
 
@@ -201,14 +201,7 @@ namespace InformationSecurity
             {
                 for (int c = 0; c < col; c++)
                 {
-                    if (strIter < str.Length)
-                    { //если еще не всю строку переписали
-                        decodeStr += matr[r, c];
-                    }
-                    else
-                    {
-                        matr[r, c] = " ";
-                    }
+                   decodeStr += matr[r, c];
                 }
             }
 
