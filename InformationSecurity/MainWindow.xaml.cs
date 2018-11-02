@@ -30,11 +30,27 @@ namespace InformationSecurity
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if(!Checked(Input.Text)) return;
             Output.Text = Encode(Input.Text, Key.Text);
+        }
+
+        private bool Checked(string text)
+        {
+            var result = true;
+
+            text.ToUpper().ToList().ForEach(_ => result = result && characters.Contains(_));
+            Key.Text.ToUpper().ToList().ForEach(_ => result = result && characters.Contains(_));
+            if (!result)
+            {
+                Message.Text = "Символ ключа или входного текста не входит в алфавит";
+            }
+            else Message.Text = "";
+            return result;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            if (!Checked(Output.Text)) return;
             Input.Text = Decode(Output.Text, Key.Text);
         }
 
@@ -58,6 +74,9 @@ namespace InformationSecurity
 
             foreach (char symbol in input)
             {
+                if ((keyword_index) == keyword.Length)
+                    keyword_index = 0;
+
                 int c = (Array.IndexOf(characters, symbol) +
                     Array.IndexOf(characters, keyword[keyword_index])) % N;
 
@@ -65,8 +84,7 @@ namespace InformationSecurity
 
                 keyword_index++;
 
-                if ((keyword_index + 1) == keyword.Length)
-                    keyword_index = 0;
+                
             }
 
             return result;
@@ -84,15 +102,15 @@ namespace InformationSecurity
 
             foreach (char symbol in input)
             {
+                if ((keyword_index) == keyword.Length)
+                    keyword_index = 0;
+
                 int p = (Array.IndexOf(characters, symbol) + N -
                     Array.IndexOf(characters, keyword[keyword_index])) % N;
 
                 result += characters[p];
 
                 keyword_index++;
-
-                if ((keyword_index + 1) == keyword.Length)
-                    keyword_index = 0;
             }
 
             return result;
