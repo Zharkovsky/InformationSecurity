@@ -39,14 +39,10 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <TextBlock Text="Декодированный текст" Grid.Column="0" Margin="10 5"/>
+            <TextBlock Text="Входной текст" Grid.Column="0" Margin="10 5"/>
             <TextBox x:Name="Input" Grid.Row="1" Grid.Column="0" Grid.RowSpan="10" Margin="10 0" Height="160"/>
-            <Button Content="Прочитать из файла" Grid.Row="10" Grid.Column="0" Margin="10 0" Click="Button_Click_2"/>
-            <TextBlock Text="Ключ" Grid.Row="1" Grid.Column="1" Margin="10 5"/>
-            <TextBox x:Name="Key" Grid.Row="2" Grid.Column="1" Margin="10 0"/>
-            <Button Content="Кодировать" Grid.Row="3" Grid.Column="1" Click="Button_Click" Margin="10 10 10 0"/>
-            <Button Content="Декодировать" Grid.Row="4" Grid.Column="1" Click="Button_Click_1" Margin="10 10 10 0"/>
-            <TextBlock Text="Кодированный текст" Grid.Row="0" Grid.Column="2" Margin="10 5"/>
+            <Button Content="Вычислить хеш" Grid.Row="3" Grid.Column="1" Click="Button_Click" Margin="10 10 10 0"/>
+            <TextBlock Text="Хеш" Grid.Row="0" Grid.Column="2" Margin="10 5"/>
             <TextBox x:Name="Output" Grid.Row="1" Grid.Column="2" Grid.RowSpan="11" Height="160" Margin="10 0"/>
         </Grid>
         <TextBlock x:Name="Error" Grid.Row="12" HorizontalAlignment="Center" Margin="20 0"/>
