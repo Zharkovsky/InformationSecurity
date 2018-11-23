@@ -1,40 +1,29 @@
-c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\bin\Debug\InformationSecurity.exe.config
-c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\bin\Debug\InformationSecurity.exe
-c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\bin\Debug\InformationSecurity.pdb
-c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity.csprojAssemblyReference.cache
-c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\MainWindow.g.cs
-c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\App.g.cs
-c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity_MarkupCompile.cache
-c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity_MarkupCompile.lref
-c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\MainWindow.baml
-c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity.g.resources
-c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity.Properties.Resources.resources
-c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity.csproj.GenerateResource.cache
-c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity.csproj.CoreCompileInputs.cache
-c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity.exe
-c:\users\kit00\source\repos\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity.pdb
-C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\bin\Debug\InformationSecurity.exe.config
-C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\bin\Debug\InformationSecurity.exe
-C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\bin\Debug\InformationSecurity.pdb
-C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\obj\Debug\InformationSecurity.csprojAssemblyReference.cache
-C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\obj\Debug\MainWindow.g.cs
-C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\obj\Debug\App.g.cs
-C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\obj\Debug\InformationSecurity_MarkupCompile.cache
-C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\obj\Debug\InformationSecurity_MarkupCompile.lref
-C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\obj\Debug\MainWindow.baml
-C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\obj\Debug\InformationSecurity.g.resources
-C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\obj\Debug\InformationSecurity.Properties.Resources.resources
-C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\obj\Debug\InformationSecurity.csproj.GenerateResource.cache
-C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\obj\Debug\InformationSecurity.csproj.CoreCompileInputs.cache
-C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\obj\Debug\InformationSecurity.exe
-C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\obj\Debug\InformationSecurity.pdb
-C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\bin\Debug\WPFFolderBrowser.dll
-C:\Users\kit00\source\repos\InformationSecurity\s\InformationSecurity\obj\Debug\InformationSecurity.csproj.CopyComplete
 C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\InformationSecurity.exe.config
 C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\InformationSecurity.exe
 C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\InformationSecurity.pdb
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\CommonSerializer.dll
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\CommonSerializer.Newtonsoft.Json.dll
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\Microsoft.Win32.Primitives.dll
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\Newtonsoft.Json.dll
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\System.AppContext.dll
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\System.Console.dll
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\System.Globalization.Calendars.dll
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\System.IO.Compression.dll
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\System.IO.Compression.ZipFile.dll
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\System.IO.FileSystem.dll
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\System.Net.Http.dll
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\System.Net.Sockets.dll
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\System.Xml.ReaderWriter.dll
 C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\WPFFolderBrowser.dll
-C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity.csprojAssemblyReference.cache
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\Newtonsoft.Json.xml
+C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\obj\Debug\MainWindow.g.cs
 C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\obj\Debug\App.g.cs
 C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity_MarkupCompile.cache
