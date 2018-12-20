@@ -36,3 +36,42 @@ C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\Information
 C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity.csproj.CopyComplete
 C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity.exe
 C:\Users\N\Documents\Visual Studio 2017\Projects\InformationSecurity\InformationSecurity\obj\Debug\InformationSecurity.pdb
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\InformationSecurity.exe.config
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\InformationSecurity.exe
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\InformationSecurity.pdb
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\CommonSerializer.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\CommonSerializer.Newtonsoft.Json.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\Microsoft.Win32.Primitives.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\System.AppContext.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\System.Console.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\System.Globalization.Calendars.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\System.IO.Compression.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\System.IO.Compression.ZipFile.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\System.IO.FileSystem.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\System.Net.Http.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\System.Net.Sockets.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\System.Xml.ReaderWriter.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\WPFFolderBrowser.dll
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\obj\Debug\InformationSecurity.csprojAssemblyReference.cache
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\obj\Debug\MainWindow.g.cs
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\obj\Debug\App.g.cs
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\obj\Debug\InformationSecurity_MarkupCompile.cache
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\obj\Debug\InformationSecurity_MarkupCompile.lref
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\obj\Debug\MainWindow.baml
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\obj\Debug\InformationSecurity.g.resources
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\obj\Debug\InformationSecurity.Properties.Resources.resources
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\obj\Debug\InformationSecurity.csproj.GenerateResource.cache
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\obj\Debug\InformationSecurity.csproj.CoreCompileInputs.cache
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\obj\Debug\InformationSecurity.csproj.CopyComplete
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\obj\Debug\InformationSecurity.exe
+C:\Users\kit00\Desktop\23.11.18\IBZI\Digital sign\InformationSecurity\obj\Debug\InformationSecurity.pdb
